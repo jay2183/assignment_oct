@@ -11,7 +11,6 @@ import '../sub_screen/galary/view/view.dart';
 class BaseScreen extends StatelessWidget {
   BaseScreen({super.key});
 
-
   final List<IconData> tabeIconList = [
     Icons.photo,
     Icons.home_outlined,
@@ -35,8 +34,8 @@ class BaseScreen extends StatelessWidget {
             children: [
               GalaryScreen(),
               Center(
-                  child: Text("Home",
-                      style: applyFontStyle(color: Colors.cyanAccent))),
+                  child:
+                      Text("Home", style: applyFontStyle(color: Colors.cyan))),
               Center(
                   child: Text("Profile",
                       style: applyFontStyle(color: Colors.cyan))),
@@ -61,15 +60,13 @@ class BaseScreen extends StatelessWidget {
                         padding: EdgeInsets.only(top: 10.h, bottom: 10.h),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: List.generate(
-                              tabeIconList.length, (index) {
+                          children: List.generate(tabeIconList.length, (index) {
                             int sIndex = _controller.tabIndex.value;
                             IconData tabIcon = tabeIconList[index];
                             String tabNa = tabName[index];
                             return GestureDetector(
                               onTap: () {
-                                
-                               _controller.settabIndexValue(index);
+                                _controller.settabIndexValue(index);
                               },
                               child: SizedBox(
                                 child: Column(
@@ -104,6 +101,7 @@ class BaseScreen extends StatelessWidget {
                         ),
                       ),
                     ),
+                    
                   ],
                 ),
               ),

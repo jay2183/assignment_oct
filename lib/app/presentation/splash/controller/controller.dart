@@ -12,7 +12,7 @@ class SplashSController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+   
     super.onInit();
     splashEngine();
   }

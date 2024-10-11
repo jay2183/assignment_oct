@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/route_manager.dart';
 
 import 'app/presentation/splash/view/view.dart';
 
-void main() {
+void main() async{
+  
   runApp(const MyApp());
 }
 
